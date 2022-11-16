@@ -6,8 +6,8 @@ RUN cd /app/cache_proxy
 
 WORKDIR /app/cache_proxy
 
-RUN make install
+RUN make install-debug
 
 EXPOSE 8080
 
-CMD ["ls", "-la"]
+CMD ["cache_proxy", "--config", "/usr/local/etc/cache_proxy/static_config.yaml"]

@@ -9,7 +9,7 @@ WikiBenchClient::WikiBenchClient(
     const userver::components::ComponentConfig& config,
     const userver::components::ComponentContext& context)
     : LoggableComponentBase(config, context),
-      http_client_(context.FindComponent<userver::components::HttpClient>()
+      http_client_(context.FindComponent<userver::components::HttpClient>("http-client")
                        .GetHttpClient()),
       upstream_(config["upstream"].As<std::string>()) {}
 
