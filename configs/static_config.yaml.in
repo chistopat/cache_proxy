@@ -53,7 +53,7 @@ components_manager:
         testsuite-support: {}
 
         http-client:
-            load-enabled: $is_testing
+            load-enabled: true
             fs-task-processor: fs-task-processor
 
         tests-control:

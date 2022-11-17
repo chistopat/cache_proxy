@@ -13,7 +13,9 @@ add_library(${PROJECT_NAME}_objs OBJECT
     src/proxy.cpp
 	src/wikibench.cpp
 	src/wikibench.hpp
-		src/regular_cache.cpp src/regular_cache.hpp)
+	src/regular_cache.cpp
+	src/regular_cache.hpp
+	)
 target_link_libraries(${PROJECT_NAME}_objs PUBLIC userver-core)
 
 
